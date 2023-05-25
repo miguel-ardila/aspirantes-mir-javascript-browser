@@ -10,18 +10,24 @@
     <label for="text">Escribe Algo:</label>
     <input type="text" id="texto" />
     <button class="boton">Convertir mensaje a mayusculas</button>
-    <p id="output"></p>
-    <p id="ResultadoMayuscula"></p>
-    
+    <p id="resultadoMayuscula"></p>
+    <p id="resultadoMinuscula"></p>
     
     <script>
         const input = document.getElementById('texto');
         const button = document.querySelector('.boton');
-        const output = document.getElementById('output');
+        const resultadoMayuscula = document.getElementById('resultadoMayuscula');
+        const resultadoMinuscula = document.getElementById('resultadoMinuscula');
+
         button.addEventListener('click', () => {
           const inputValue = input.value;
           const uppercaseValue = inputValue.toUpperCase();
-          output.textContent = uppercaseValue;
+          const lowercaseValue = inputValue.toLowerCase();
+
+
+          resultadoMayuscula.textContent = uppercaseValue;
+          resultadoMinuscula.textContent =lowercaseValue;
+
         });
     </script>
 

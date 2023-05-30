@@ -1,25 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+
+
 .is-completed {
     text-decoration: line-through;
   }
 
-  ul {
+ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px 0;
+    color: #0f7d99;
+    font-weight: bold;
   }
   
+.input-box {
+  background-color: #f2f2f2;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
 
 
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+body {
+  font-family: 'IBM Plex Mono', monospace;
   }
   
   h1 {
@@ -27,74 +29,73 @@
   }
   
   form {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    width: 400px;
   }
-  
-  input[type="text"] {
+
+.box{
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.55);
     padding: 10px;
-    font-size: 16px;
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin: 15px;
+  }
+
+  
+
+input[type="text"] {
+  font-size: 16px;
+  width: 60%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
   }
   
-  button[type="submit"] {
-    padding: 10px 20px;
-    font-size: 16px;
+button[type="submit"] {
+    padding: 4px 6px;
+    font-size: 20px;
     background-color: #e0489c;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-left: 10px;
-  }
-  
-  ul {
+}
+ul {
     list-style-type: none;
     padding: 0;
   }
   
-  li {
+li {
     margin-bottom: 10px;
     text-align: left;
   }
   
-  .task-checkbox {
+.task-checkbox {
     margin-right: 10px;
   }
   
-  .task-title {
+.task-title {
     font-size: 16px;
   }
   
-  .is-completed .task-title {
+.is-completed .task-title {
     text-decoration: line-through;
     color: #999;
   }
   
-  #delete-completed-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #35c2f1;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#delete-completed-btn {
+  padding: 8px 6px;
+  font-size: 16px;
+  background-color: #35c2f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+    
   }
   
-  #delete-completed-btn:hover {
-    background-color: #CC0000;
+#delete-completed-btn:hover {
+    background-color: #037597;
   }
-  
- 
-  
-  
-  
-  
-  
-  
-
-  
